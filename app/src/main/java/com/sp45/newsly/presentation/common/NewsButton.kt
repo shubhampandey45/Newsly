@@ -2,21 +2,20 @@ package com.sp45.newsly.presentation.common
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonColors
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import com.sp45.newsly.ui.theme.WhiteGray
 
 @Composable
 fun NewsButton(
     text: String,
-    onClick: () -> Unit
+    onClick: () -> Unit,
 ) {
 
     Button(
@@ -28,25 +27,23 @@ fun NewsButton(
         shape = RoundedCornerShape(size = 6.dp)
     ) {
         Text(
-            text,
-            style = MaterialTheme.typography.labelMedium.copy(fontWeight = FontWeight.SemiBold)
+            text = text,
+            style = MaterialTheme.typography.labelMedium.copy(fontWeight = FontWeight.SemiBold),
+            color = Color.White
         )
     }
-
 }
 
 @Composable
 fun NewsTextButton(
     text: String,
-    onClick: () -> Unit
+    onClick: () -> Unit,
 ) {
-    TextButton(
-        onClick = onClick
-    ) {
+    TextButton(onClick = onClick) {
         Text(
-            text,
+            text = text,
             style = MaterialTheme.typography.labelMedium.copy(fontWeight = FontWeight.SemiBold),
-            color = Color.White
+            color = WhiteGray
         )
     }
 }

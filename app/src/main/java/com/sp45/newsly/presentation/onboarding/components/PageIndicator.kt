@@ -1,6 +1,7 @@
 package com.sp45.newsly.presentation.onboarding.components
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.size
@@ -11,18 +12,18 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import com.sp45.newsly.presentation.Dimens.IndicatorSize
-import com.sp45.newsly.ui.theme.PurpleGrey40
+import com.sp45.newsly.ui.theme.WhiteGray
 
 @Composable
-fun PageIndicator(
+fun PagerIndicator(
     modifier: Modifier = Modifier,
-    pageSize: Int,
+    pagesSize: Int,
     selectedPage: Int,
     selectedColor: Color = MaterialTheme.colorScheme.primary,
-    unselectedColor: Color = PurpleGrey40 // BlueGrey
+    unselectedColor: Color = WhiteGray,
 ) {
-    Row {
-        repeat(pageSize) { page ->
+    Row(modifier = modifier, horizontalArrangement = Arrangement.SpaceBetween) {
+        repeat(times = pagesSize) { page ->
             Box(
                 modifier = Modifier
                     .size(IndicatorSize)

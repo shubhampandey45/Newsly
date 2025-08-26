@@ -12,18 +12,18 @@ data class Page(
 
 val pages = listOf(
     Page(
-        title = "Discover Amazing Recipes",
-        description = "Explore a wide variety of delicious recipes from around the world. Find your next favorite meal here!",
+        title = "Clarity in the Chaos",
+        description = "Every headline tells a story. Explore ideas, spark curiosity, and see perspectives that matter.",
         image = R.drawable.onboarding1
     ),
     Page(
-        title = "Save Your Favorites",
-        description = "Easily save and organize recipes you love. Access them anytime, anywhere.",
+        title = "Find what matters to you.",
+        description = "From global headlines to your favorite niche, search and discover stories that spark your curiosity.",
         image = R.drawable.onboarding2
     ),
     Page(
-        title = "Plan Your Meals",
-        description = "Create weekly meal plans and generate shopping lists with just a few taps. Make cooking hassle-free.",
+        title = "Save. Read. Remember.",
+        description = "Bookmark the stories you love and dive deeper anytime your personal news hub, always with you.",
         image = R.drawable.onboarding3
     )
 )

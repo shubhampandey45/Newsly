@@ -68,3 +68,4 @@ kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "ko
 hilt-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hiltAndroid" }
 room-android = { id = "androidx.room", version.ref = "roomVersion" }
+kotlin-parcelize = {id = "kotlin-parcelize"}
