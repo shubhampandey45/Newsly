@@ -1,4 +1,6 @@
 # 📰 Newsly
+News application built with Kotlin, Jetpack Compose, Clean Architecture, Retrofit, Hilt, and Paging.
+<p> Browse articles, search news, and bookmark your favorites.</p>
  <!-- <p align="center">
 <img src="https://github.com/user-attachments/assets/a1930706-502e-4708-8c84-14f622f6cb88" width="80" height="80" />
 </p> -->
@@ -32,3 +34,8 @@
     <td><img src="https://github.com/user-attachments/assets/05931596-720a-43f7-ad9a-bf03b8d37f53" width="200"></td>
   </tr>
 </table>
+
+## To Get Started
+Clone the repo and your API key (from newsapi.org) in local.properties: 
+API_KEY=YOUR_API_KEY
+
